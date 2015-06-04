@@ -1,13 +1,14 @@
-package 'epel-release'
-
-execute 'yum update -y' do
-  command 'yum update -y'
-  command 'yum upgrade -y'
-end
+package 'epel-release' if node[:platform] =~ /(redhat)|(centos)/
+include_recipe 'cookbook/update/recipe.rb'
+include_recipe 'rbenv::system'
 
 package 'nginx'
-package 'java-1.8.0-openjdk-headless'
+package 'jenkins'
 
 service 'nginx' do
+  action [:start, :enable]
+end
+
+service 'jenkins' do
   action [:start, :enable]
 end
