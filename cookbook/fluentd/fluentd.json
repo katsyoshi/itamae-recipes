@@ -1,0 +1,5 @@
+{
+    "fluentd": {
+        "config": ["map", "send", "dstat"]
+    }
+}
