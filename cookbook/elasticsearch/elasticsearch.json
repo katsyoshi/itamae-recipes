@@ -1,0 +1,9 @@
+{
+    "elasticsearch" : {
+        "plugin" : [
+            {
+                "name": "elastic/kibana"
+            }
+        ]
+    }
+}
