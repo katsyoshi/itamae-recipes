@@ -1,0 +1,7 @@
+{
+    "nginx": {
+        "config": [
+            {"name": "subdirectory", "enabled": true}
+        ]
+    }
+}
