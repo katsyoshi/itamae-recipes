@@ -11,3 +11,20 @@ when 'ubuntu'
 when 'debian'
 when 'centos', 'redhat'
 end
+
+if node[:'td-agent'][:install] == true
+  execute 'update' do
+    command 'apt update'
+  end
+
+  package 'td-agent'
+end
+
+if node[:'td-agent'][:plugins]
+  node[:'td-agent'][:plugins].each do |plugin|
+    gem_package "install #{plugin} plugin" do
+      gem_binary"/opt/td-agent/embedded/bin/gem"
+      package_name "fluent-plugin-#{plugin}"
+    end
+  end
+end
