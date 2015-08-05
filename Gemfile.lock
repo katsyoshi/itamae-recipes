@@ -1,3 +1,17 @@
+GIT
+  remote: git://github.com/katsyoshi/itamae-plugin-recipe-plenv.git
+  revision: 08fecedc9f786d97ae3a0ef6642e66d58099bdc2
+  specs:
+    itamae-plugin-recipe-plenv (0.1.0)
+      itamae (~> 1.2)
+
+GIT
+  remote: git://github.com/katsyoshi/itamae-plugin-recipe-pyenv.git
+  revision: dd96317a1f3a4162689b5699879d26cbafb4df96
+  specs:
+    itamae-plugin-recipe-pyenv (0.1.0)
+      itamae
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -8,13 +22,13 @@ GEM
       libyajl2 (~> 1.2)
     hashie (3.4.2)
     ipaddress (0.8.0)
-    itamae (1.4.1)
+    itamae (1.4.3)
       ansi
       hashie
       schash (~> 0.1.0)
       specinfra (>= 2.37.0, < 3.0.0)
       thor
-    itamae-plugin-recipe-rbenv (0.3.2)
+    itamae-plugin-recipe-rbenv (0.3.3)
       itamae (~> 1.2)
     libyajl2 (1.2.0)
     mime-types (2.6.1)
@@ -63,7 +77,7 @@ GEM
       rspec-its
       specinfra (~> 2.38)
     sfl (2.2)
-    specinfra (2.38.1)
+    specinfra (2.40.0)
       net-scp
       net-ssh (~> 2.7)
       net-telnet
@@ -77,6 +91,8 @@ PLATFORMS
 
 DEPENDENCIES
   itamae
+  itamae-plugin-recipe-plenv!
+  itamae-plugin-recipe-pyenv!
   itamae-plugin-recipe-rbenv
   ohai
   rake
