@@ -1,16 +1,24 @@
 GIT
+  remote: git://github.com/katsyoshi/itamae-plugin-recipe-langenv.git
+  revision: 810b37918ad896d3bf7b2cd661acd0322ec9c4fc
+  specs:
+    itamae-plugin-recipe-langenv (0.1.0)
+      itamae (~> 1.2)
+      itamae-plugin-recipe-rbenv
+
+GIT
   remote: git://github.com/katsyoshi/itamae-plugin-recipe-plenv.git
-  revision: 08fecedc9f786d97ae3a0ef6642e66d58099bdc2
+  revision: 08d26d28822729b83d62272a4632982c5ba109c2
   specs:
     itamae-plugin-recipe-plenv (0.1.0)
       itamae (~> 1.2)
 
 GIT
   remote: git://github.com/katsyoshi/itamae-plugin-recipe-pyenv.git
-  revision: dd96317a1f3a4162689b5699879d26cbafb4df96
+  revision: 2b37adfc8405f38bf8504b044c758d316c82b150
   specs:
     itamae-plugin-recipe-pyenv (0.1.0)
-      itamae
+      itamae (~> 1.2)
 
 GEM
   remote: https://rubygems.org/
@@ -41,7 +49,7 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
     net-telnet (0.1.1)
-    ohai (8.5.0)
+    ohai (8.5.1)
       ffi (~> 1.9)
       ffi-yajl (~> 2.2)
       ipaddress
@@ -70,14 +78,14 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.3.0)
     rspec-support (3.3.0)
-    schash (0.1.1)
-    serverspec (2.20.0)
+    schash (0.1.2)
+    serverspec (2.21.0)
       multi_json
       rspec (~> 3.0)
       rspec-its
       specinfra (~> 2.38)
     sfl (2.2)
-    specinfra (2.40.0)
+    specinfra (2.40.2)
       net-scp
       net-ssh (~> 2.7)
       net-telnet
@@ -91,6 +99,7 @@ PLATFORMS
 
 DEPENDENCIES
   itamae
+  itamae-plugin-recipe-langenv!
   itamae-plugin-recipe-plenv!
   itamae-plugin-recipe-pyenv!
   itamae-plugin-recipe-rbenv
