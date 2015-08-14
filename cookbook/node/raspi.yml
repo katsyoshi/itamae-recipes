@@ -1,3 +1,9 @@
 packages:
   - htop
   - dstat
+  - git-core
+  - build-essential
+  - zlib1g-dev
+  - cmake
+git:
+  - git://github.com/fluent/fluent-bit.git
