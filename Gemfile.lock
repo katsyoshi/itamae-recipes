@@ -1,55 +1,51 @@
 GIT
   remote: git://github.com/katsyoshi/itamae-plugin-recipe-langenv.git
-  revision: 810b37918ad896d3bf7b2cd661acd0322ec9c4fc
+  revision: e732849da189d898ef2e8745d372f6a19b866a87
   specs:
     itamae-plugin-recipe-langenv (0.1.0)
       itamae (~> 1.2)
+      itamae-plugin-recipe-plenv
+      itamae-plugin-recipe-pyenv
       itamae-plugin-recipe-rbenv
-
-GIT
-  remote: git://github.com/katsyoshi/itamae-plugin-recipe-plenv.git
-  revision: 08d26d28822729b83d62272a4632982c5ba109c2
-  specs:
-    itamae-plugin-recipe-plenv (0.1.0)
-      itamae (~> 1.2)
-
-GIT
-  remote: git://github.com/katsyoshi/itamae-plugin-recipe-pyenv.git
-  revision: 2b37adfc8405f38bf8504b044c758d316c82b150
-  specs:
-    itamae-plugin-recipe-pyenv (0.1.0)
-      itamae (~> 1.2)
 
 GEM
   remote: https://rubygems.org/
   specs:
     ansi (1.5.0)
+    chef-config (12.5.0.alpha.1)
+      mixlib-config (~> 2.0)
+      mixlib-shellout (~> 2.0)
     diff-lcs (1.2.5)
     ffi (1.9.10)
     ffi-yajl (2.2.2)
       libyajl2 (~> 1.2)
     hashie (3.4.2)
     ipaddress (0.8.0)
-    itamae (1.4.3)
+    itamae (1.6.0)
       ansi
       hashie
       schash (~> 0.1.0)
       specinfra (>= 2.37.0, < 3.0.0)
       thor
-    itamae-plugin-recipe-rbenv (0.3.3)
+    itamae-plugin-recipe-plenv (0.1.0)
+      itamae (~> 1.2)
+    itamae-plugin-recipe-pyenv (0.1.0)
+      itamae (~> 1.2)
+    itamae-plugin-recipe-rbenv (0.3.4)
       itamae (~> 1.2)
     libyajl2 (1.2.0)
-    mime-types (2.6.1)
+    mime-types (2.6.2)
     mixlib-cli (1.5.0)
     mixlib-config (2.2.1)
     mixlib-log (1.6.0)
-    mixlib-shellout (2.1.0)
+    mixlib-shellout (2.2.1)
     multi_json (1.11.2)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
     net-telnet (0.1.1)
-    ohai (8.5.1)
+    ohai (8.6.0)
+      chef-config (>= 12.5.0.alpha.1, < 13)
       ffi (~> 1.9)
       ffi-yajl (~> 2.2)
       ipaddress
@@ -79,13 +75,13 @@ GEM
       rspec-support (~> 3.3.0)
     rspec-support (3.3.0)
     schash (0.1.2)
-    serverspec (2.21.0)
+    serverspec (2.24.1)
       multi_json
       rspec (~> 3.0)
       rspec-its
-      specinfra (~> 2.38)
+      specinfra (~> 2.43)
     sfl (2.2)
-    specinfra (2.40.2)
+    specinfra (2.43.8)
       net-scp
       net-ssh (~> 2.7)
       net-telnet
@@ -100,12 +96,9 @@ PLATFORMS
 DEPENDENCIES
   itamae
   itamae-plugin-recipe-langenv!
-  itamae-plugin-recipe-plenv!
-  itamae-plugin-recipe-pyenv!
-  itamae-plugin-recipe-rbenv
   ohai
   rake
   serverspec
 
 BUNDLED WITH
-   1.10.5
+   1.10.6
