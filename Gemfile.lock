@@ -1,93 +1,113 @@
 GIT
   remote: git://github.com/katsyoshi/itamae-plugin-recipe-langenv.git
-  revision: 810b37918ad896d3bf7b2cd661acd0322ec9c4fc
+  revision: e732849da189d898ef2e8745d372f6a19b866a87
   specs:
     itamae-plugin-recipe-langenv (0.1.0)
       itamae (~> 1.2)
+      itamae-plugin-recipe-plenv
+      itamae-plugin-recipe-pyenv
       itamae-plugin-recipe-rbenv
 
 GIT
-  remote: git://github.com/katsyoshi/itamae-plugin-recipe-plenv.git
-  revision: 08d26d28822729b83d62272a4632982c5ba109c2
+  remote: git://github.com/katsyoshi/itamae-plugin-recipe-lxc.git
+  revision: 3c9da85818e809bf0a89eae7e97a99d17a8d8b80
   specs:
-    itamae-plugin-recipe-plenv (0.1.0)
+    itamae-plugin-recipe-lxc (0.1.0)
       itamae (~> 1.2)
 
 GIT
-  remote: git://github.com/katsyoshi/itamae-plugin-recipe-pyenv.git
-  revision: 2b37adfc8405f38bf8504b044c758d316c82b150
+  remote: git://github.com/katsyoshi/itamae-plugin-resource-cpan.git
+  revision: ccd0d42ffba69a600982fc079b83150512e9a781
   specs:
-    itamae-plugin-recipe-pyenv (0.1.0)
+    itamae-plugin-resource-cpan (0.1.0)
       itamae (~> 1.2)
 
 GEM
   remote: https://rubygems.org/
   specs:
     ansi (1.5.0)
+    chef-config (12.9.38)
+      fuzzyurl (~> 0.8.0)
+      mixlib-config (~> 2.0)
+      mixlib-shellout (~> 2.0)
+    coderay (1.1.1)
     diff-lcs (1.2.5)
     ffi (1.9.10)
-    ffi-yajl (2.2.2)
+    ffi-yajl (2.2.3)
       libyajl2 (~> 1.2)
-    hashie (3.4.2)
-    ipaddress (0.8.0)
-    itamae (1.4.3)
+    fuzzyurl (0.8.0)
+    hashie (3.4.3)
+    ipaddress (0.8.3)
+    itamae (1.9.6)
       ansi
       hashie
       schash (~> 0.1.0)
       specinfra (>= 2.37.0, < 3.0.0)
       thor
-    itamae-plugin-recipe-rbenv (0.3.3)
+    itamae-plugin-recipe-plenv (0.1.0)
+      itamae (~> 1.2)
+    itamae-plugin-recipe-pyenv (0.1.0)
+      itamae (~> 1.2)
+    itamae-plugin-recipe-rbenv (0.6.1)
+      itamae (~> 1.2)
+    itamae-plugin-resource-pip (0.1.0)
       itamae (~> 1.2)
     libyajl2 (1.2.0)
-    mime-types (2.6.1)
+    method_source (0.8.2)
     mixlib-cli (1.5.0)
     mixlib-config (2.2.1)
     mixlib-log (1.6.0)
-    mixlib-shellout (2.1.0)
+    mixlib-shellout (2.2.6)
     multi_json (1.11.2)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
-    net-ssh (2.9.2)
+    net-ssh (3.1.1)
     net-telnet (0.1.1)
-    ohai (8.5.1)
+    ohai (8.14.0)
+      chef-config (>= 12.5.0.alpha.1, < 13)
       ffi (~> 1.9)
       ffi-yajl (~> 2.2)
       ipaddress
-      mime-types (~> 2.0)
       mixlib-cli
       mixlib-config (~> 2.0)
       mixlib-log
       mixlib-shellout (~> 2.0)
-      rake (~> 10.1)
+      plist (~> 3.1)
       systemu (~> 2.6.4)
       wmi-lite (~> 1.0)
-    rake (10.4.2)
-    rspec (3.3.0)
-      rspec-core (~> 3.3.0)
-      rspec-expectations (~> 3.3.0)
-      rspec-mocks (~> 3.3.0)
-    rspec-core (3.3.2)
-      rspec-support (~> 3.3.0)
-    rspec-expectations (3.3.1)
+    plist (3.2.0)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    rake (11.1.2)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.4)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.3.0)
+      rspec-support (~> 3.4.0)
     rspec-its (1.2.0)
       rspec-core (>= 3.0.0)
       rspec-expectations (>= 3.0.0)
-    rspec-mocks (3.3.2)
+    rspec-mocks (3.4.1)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.3.0)
-    rspec-support (3.3.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
     schash (0.1.2)
-    serverspec (2.21.0)
+    serverspec (2.31.1)
       multi_json
       rspec (~> 3.0)
       rspec-its
-      specinfra (~> 2.38)
+      specinfra (~> 2.53)
     sfl (2.2)
-    specinfra (2.40.2)
+    slop (3.6.0)
+    specinfra (2.56.1)
       net-scp
-      net-ssh (~> 2.7)
+      net-ssh (>= 2.7, < 4.0)
       net-telnet
       sfl
     systemu (2.6.5)
@@ -100,12 +120,13 @@ PLATFORMS
 DEPENDENCIES
   itamae
   itamae-plugin-recipe-langenv!
-  itamae-plugin-recipe-plenv!
-  itamae-plugin-recipe-pyenv!
-  itamae-plugin-recipe-rbenv
+  itamae-plugin-recipe-lxc!
+  itamae-plugin-resource-cpan!
+  itamae-plugin-resource-pip
   ohai
+  pry
   rake
   serverspec
 
 BUNDLED WITH
-   1.10.5
+   1.11.2
