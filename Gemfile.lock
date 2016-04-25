@@ -58,12 +58,12 @@ GEM
     mixlib-config (2.2.1)
     mixlib-log (1.6.0)
     mixlib-shellout (2.2.6)
-    multi_json (1.11.2)
+    multi_json (1.11.3)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (3.1.1)
     net-telnet (0.1.1)
-    ohai (8.14.0)
+    ohai (8.15.1)
       chef-config (>= 12.5.0.alpha.1, < 13)
       ffi (~> 1.9)
       ffi-yajl (~> 2.2)
@@ -98,14 +98,14 @@ GEM
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
     schash (0.1.2)
-    serverspec (2.31.1)
+    serverspec (2.32.0)
       multi_json
       rspec (~> 3.0)
       rspec-its
       specinfra (~> 2.53)
     sfl (2.2)
     slop (3.6.0)
-    specinfra (2.56.1)
+    specinfra (2.57.0)
       net-scp
       net-ssh (>= 2.7, < 4.0)
       net-telnet
