@@ -1,0 +1,23 @@
+{
+    "lxc" : {
+        "name" : "hoge",
+        "create" : {
+            "template" : {
+                "os" : "ubuntu",
+                "options" : {
+                    "arch" : "amd64",
+                    "debug" : true,
+                    "packages" : "emacs,wget",
+                    "user" : "ubuntu"
+                }
+            }
+        },
+        "clone" : {
+            "master": "hoge",
+            "copy" : "huga"
+        },
+        "destroy" : false,
+        "start" : true,
+        "stop" : true
+    }
+}
