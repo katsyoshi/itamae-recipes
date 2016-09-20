@@ -1,0 +1,84 @@
+{
+    "os" : {
+        "setup" : {
+            "disk" : {
+                "device" : "/dev/sda",
+                "type" : "gpt",
+                "partitions" : [
+                    {
+                        "name" : "EFI",
+                        "ptype" : "fat32",
+                        "start" : "1",
+                        "end" : "512MiB",
+                        "filesystem" : "vfat"
+                    },
+                    {
+                        "name" : "swap",
+                        "start" : "512MiB",
+                        "end" : "4608MiB",
+                        "filesystem" : "swap"
+                    },
+                    {
+                        "name" : "root",
+                        "ptype" : "btrfs",
+                        "start" : "4608MiB",
+                        "end" : "100%",
+                        "filesystem" : "btrfs"
+                    }
+                ]
+            },
+            "mount-points" : [
+                {
+                    "name" : "root",
+                    "device" : "/dev/sda3",
+                    "mount" : "/mnt/gentoo"
+                },
+                {
+                    "name" : "boot",
+                    "device" : "/dev/sda1",
+                    "mount" : "/mnt/gentoo/boot/efi"
+                }
+            ],
+            "tarballs" : [
+                {
+                    "file" : "stage3-amd64.tar.bz2",
+                    "dest" : "/mnt/gentoo/stage3-amd64.tar.bz2",
+                    "extract" : "/mnt/gentoo"
+                }
+            ],
+            "mount-systems" : [
+                ["-t proc proc", "/mnt/gentoo/proc"],
+                ["--rbind /sys", "/mnt/gentoo/sys"],
+                ["--make-rslave", "/mnt/gentoo/sys"],
+                ["--rbind /dev", "/mnt/gentoo/dev"],
+                ["--make-rslave", "/mnt/gentoo/dev"]
+            ]
+        },
+        "install" : {
+            "portage" : {
+                "repos" : "gentoo.conf"
+            },
+            "root" : "/mnt/gentoo",
+            "packages" : ["dhcpcd", "eix", "sudo", "app-portage/eix", "dev-vcs/git", "openssh", "gentoo-sources"]
+        },
+
+        "post-install" : {
+            "users" : [{
+                "name" : "katsu",
+                "gid" : "10",
+                "password" : "hogehoge",
+                "keyfile" : "id_rsa.pub"
+            }],
+
+            "portage" : {
+                "configs" : [{
+                    "file" : "git.conf",
+                    "dest" : "/etc/portage/repos.conf/gentoo.conf"
+                },{
+                    "file" : "make.conf",
+                    "dest" : "/etc/portage/make.conf"
+                }]
+            }
+        }
+    }
+}

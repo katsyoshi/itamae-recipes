@@ -1,132 +1,34 @@
-GIT
-  remote: git://github.com/katsyoshi/itamae-plugin-recipe-langenv.git
-  revision: e732849da189d898ef2e8745d372f6a19b866a87
-  specs:
-    itamae-plugin-recipe-langenv (0.1.0)
-      itamae (~> 1.2)
-      itamae-plugin-recipe-plenv
-      itamae-plugin-recipe-pyenv
-      itamae-plugin-recipe-rbenv
-
-GIT
-  remote: git://github.com/katsyoshi/itamae-plugin-recipe-lxc.git
-  revision: 3c9da85818e809bf0a89eae7e97a99d17a8d8b80
-  specs:
-    itamae-plugin-recipe-lxc (0.1.0)
-      itamae (~> 1.2)
-
-GIT
-  remote: git://github.com/katsyoshi/itamae-plugin-resource-cpan.git
-  revision: ccd0d42ffba69a600982fc079b83150512e9a781
-  specs:
-    itamae-plugin-resource-cpan (0.1.0)
-      itamae (~> 1.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
     ansi (1.5.0)
-    chef-config (12.9.38)
-      fuzzyurl (~> 0.8.0)
-      mixlib-config (~> 2.0)
-      mixlib-shellout (~> 2.0)
-    coderay (1.1.1)
-    diff-lcs (1.2.5)
-    ffi (1.9.10)
-    ffi-yajl (2.2.3)
-      libyajl2 (~> 1.2)
-    fuzzyurl (0.8.0)
     hashie (3.4.3)
-    ipaddress (0.8.3)
     itamae (1.9.6)
       ansi
       hashie
       schash (~> 0.1.0)
       specinfra (>= 2.37.0, < 3.0.0)
       thor
-    itamae-plugin-recipe-plenv (0.1.0)
-      itamae (~> 1.2)
-    itamae-plugin-recipe-pyenv (0.1.0)
-      itamae (~> 1.2)
-    itamae-plugin-recipe-rbenv (0.6.1)
-      itamae (~> 1.2)
-    itamae-plugin-resource-pip (0.1.0)
-      itamae (~> 1.2)
-    libyajl2 (1.2.0)
-    method_source (0.8.2)
-    mixlib-cli (1.5.0)
-    mixlib-config (2.2.1)
-    mixlib-log (1.6.0)
-    mixlib-shellout (2.2.6)
-    multi_json (1.11.3)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (3.1.1)
     net-telnet (0.1.1)
-    ohai (8.15.1)
-      chef-config (>= 12.5.0.alpha.1, < 13)
-      ffi (~> 1.9)
-      ffi-yajl (~> 2.2)
-      ipaddress
-      mixlib-cli
-      mixlib-config (~> 2.0)
-      mixlib-log
-      mixlib-shellout (~> 2.0)
-      plist (~> 3.1)
-      systemu (~> 2.6.4)
-      wmi-lite (~> 1.0)
-    plist (3.2.0)
-    pry (0.10.3)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
     rake (11.1.2)
-    rspec (3.4.0)
-      rspec-core (~> 3.4.0)
-      rspec-expectations (~> 3.4.0)
-      rspec-mocks (~> 3.4.0)
-    rspec-core (3.4.4)
-      rspec-support (~> 3.4.0)
-    rspec-expectations (3.4.0)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.4.0)
-    rspec-its (1.2.0)
-      rspec-core (>= 3.0.0)
-      rspec-expectations (>= 3.0.0)
-    rspec-mocks (3.4.1)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.4.0)
-    rspec-support (3.4.1)
     schash (0.1.2)
-    serverspec (2.32.0)
-      multi_json
-      rspec (~> 3.0)
-      rspec-its
-      specinfra (~> 2.53)
     sfl (2.2)
-    slop (3.6.0)
     specinfra (2.57.0)
       net-scp
       net-ssh (>= 2.7, < 4.0)
       net-telnet
       sfl
-    systemu (2.6.5)
     thor (0.19.1)
-    wmi-lite (1.0.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   itamae
-  itamae-plugin-recipe-langenv!
-  itamae-plugin-recipe-lxc!
-  itamae-plugin-resource-cpan!
-  itamae-plugin-resource-pip
-  ohai
-  pry
   rake
-  serverspec
 
 BUNDLED WITH
-   1.11.2
+   1.12.5

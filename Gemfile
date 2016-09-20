@@ -2,10 +2,5 @@ source 'https://rubygems.org'
 
 gem 'rake'
 gem 'itamae'
-gem 'serverspec'
-gem 'itamae-plugin-resource-pip'
-gem 'itamae-plugin-resource-cpan', github: 'katsyoshi/itamae-plugin-resource-cpan'
-gem 'itamae-plugin-recipe-lxc', github: 'katsyoshi/itamae-plugin-recipe-lxc'
-gem 'itamae-plugin-recipe-langenv', github: 'katsyoshi/itamae-plugin-recipe-langenv'
-gem 'ohai'
-gem 'pry'
+
+
