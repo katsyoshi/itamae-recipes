@@ -1,0 +1,71 @@
+{
+    "packages" : [{
+        "name" : "x11-misc/slim"
+    },{
+        "name" : "x11-apps/xdm"
+    },{
+        "name" : "net-misc/networkmanager",
+        "portage" : {
+            "use" : "networkmanager"
+        }
+    },{
+        "name" : "gnome-extra/nm-applet",
+        "portage" : {
+            "use" : "nm-applet"
+        }
+    },{
+        "name" : "app-i18n/mozc",
+        "portage" : {
+            "use" : "mozc",
+            "accept_keywords" : "mozc"
+        }
+    },{
+        "name" : "media-fonts/noto"
+    },{
+        "name" : "media-fonts/ricty",
+        "portage" : {
+            "accept_keywords" : "ricty"
+        }
+    },{
+        "name" : "x11-terms/xfce4-terminal",
+        "portage" : {
+            "accept_keywords" : "xfce4-terminal"
+        }
+    },{
+        "name" : "app-misc/tmux"
+    },{
+        "name" : "sys-kernel/linux-firmware"
+    },{
+        "name" : "sys-process/htop"
+    },{
+        "name" : "www-client/google-chrome",
+        "portage" : {
+            "accept_keywords" : "google-chrome",
+            "license" : "google-chrome"
+        }
+    },{
+        "name" : "www-client/firefox-bin"
+    },{
+        "name" : "net-misc/curl",
+        "portage" : {
+            "use" : "curl"
+        }
+    },{
+        "name" : "dev-libs/openssl"
+    },{
+        "name" : "sys-kernel/gentoo-sources",
+        "portage" : {
+            "accept_keywords" : "gentoo-sources"
+        }
+    },{
+        "name" : "app-portage/layman"
+    },{
+        "name" : "app-text/poppler",
+        "portage" : {
+            "use" : "poppler"
+        }
+    }],
+    "initialize" : {
+
+    }
+}
