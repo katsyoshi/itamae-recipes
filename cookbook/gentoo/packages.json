@@ -70,6 +70,13 @@
             "use" : "emacs",
             "accept_keywords" : "emacs"
         }
+    },{
+        "name" : "x11-libs/gdk-pixbuf",
+        "portage" : {
+            "use" : "gdk-pixbuf"
+        }
+    },{
+        "name" : "x11-drivers/xf86-input-synaptics"
     }],
     "initialize" : {
 
