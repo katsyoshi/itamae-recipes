@@ -64,6 +64,12 @@
         "portage" : {
             "use" : "poppler"
         }
+    },{
+        "name" : "app-editors/emacs",
+        "portage" : {
+            "use" : "emacs",
+            "accept_keywords" : "emacs"
+        }
     }],
     "initialize" : {
 
