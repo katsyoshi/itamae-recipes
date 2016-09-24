@@ -1,10 +1,11 @@
-gentoo = node.dig('platform')
-exit 1 if gentoo =~ /gentoo/i
+gentoo = node.platform
 
-node.dig('packages')&.each do |package|
-  config_dir = package.dig('cofig_root') || "/etc/portage"
-  name = package.dig('name')
-  package.dig('portage')&.each do |type, config|
+exit 1 unless gentoo.match(/gentoo/i)
+
+node.packages&.each do |package|
+  config_dir = package.cofig_root || "/etc/portage"
+  name = package.name
+  package.portage&.each do |type, config|
     remote_file "set #{type}" do
       source [type, config].join('/')
       path [config_dir, "package.#{type}", config].join('/')
