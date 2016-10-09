@@ -59,7 +59,7 @@
                 "repos" : "gentoo.conf"
             },
             "root" : "/mnt/gentoo",
-            "packages" : ["dhcpcd", "eix", "sudo", "app-portage/eix", "dev-vcs/git", "openssh", "gentoo-sources"]
+            "packages" : ["net-misc/dhcpcd", "app-portage/eix", "app-admin/sudo", "dev-vcs/git", "net-misc/openssh", "sys-kernel/gentoo-sources"]
         },
 
         "post-install" : {
