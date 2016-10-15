@@ -77,6 +77,8 @@
         }
     },{
         "name" : "x11-drivers/xf86-input-synaptics"
+    },{
+        "name" : "net-misc/ntp"
     }],
     "initialize" : {
 
