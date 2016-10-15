@@ -80,12 +80,19 @@
     },{
         "name" : "net-misc/ntp"
     },{
+        "name" : "media-gfx/imagemagick",
+        "portage" : {
+            "use" : "imagemagick"
+        }
+    },{
         "name" : "x11-misc/shutter",
         "portage" : {
             "accept_keywords" : "shutter"
         }
-    }],
-    "initialize" : {
-
-    }
+    },{
+        "name" : "x11-libs/libxcb",
+        "portage" : {
+            "use" : "libxcb"
+        }
+    }]
 }
