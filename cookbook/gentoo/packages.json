@@ -98,5 +98,10 @@
         "name" : "app-portage/gentoolkit"
     },{
         "name" : "x11-misc/parcellite"
+    },{
+        "name" : "media-gfx/gimp",
+        "portage" : {
+            "use" : "gimp"
+        }
     }]
 }
