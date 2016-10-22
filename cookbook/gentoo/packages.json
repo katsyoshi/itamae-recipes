@@ -96,5 +96,7 @@
         }
     },{
         "name" : "app-portage/gentoolkit"
+    },{
+        "name" : "x11-misc/parcellite"
     }]
 }
