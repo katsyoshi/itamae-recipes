@@ -103,5 +103,11 @@
         "portage" : {
             "use" : "gimp"
         }
+    },{
+        "name" : "app-text/texlive-core",
+        "portage" : {
+            "accept_keywords" : "texlive-core",
+            "use" : "texlive-core"
+        }
     }]
 }
