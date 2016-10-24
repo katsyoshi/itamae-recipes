@@ -14,6 +14,6 @@ node.packages&.each do |package|
 
   execute "install #{name}" do
     command "emerge #{name}"
-    not_if "grep #{name} /var/lib/portage/world"
+    not_if "grep -e '^#{name}$' /var/lib/portage/world"
   end
 end
