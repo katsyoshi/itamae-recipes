@@ -1,0 +1,4 @@
+app-text/texlive context detex doc dvi2tty dvipdfm epspdf extra graphics humanities luatex metapost music omega pdfannotextractor png pstricks publishers science tex4ht texi2html truetype xetex xindy xml
+app-text/texlive-core xetex
+media-libs/harfbuzz icu
+media-libs/gd truetype png jpeg fontconfig

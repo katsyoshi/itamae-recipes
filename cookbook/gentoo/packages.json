@@ -104,10 +104,10 @@
             "use" : "gimp"
         }
     },{
-        "name" : "app-text/texlive-core",
+        "name" : "app-text/texlive",
         "portage" : {
-            "accept_keywords" : "texlive-core",
-            "use" : "texlive-core"
+            "accept_keywords" : "texlive",
+            "use" : "texlive"
         }
     }]
 }
