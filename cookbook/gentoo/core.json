@@ -1,0 +1,44 @@
+{
+    "packages" : [{
+        "name" : "dev-libs/openssl"
+    },{
+        "name" : "net-misc/curl",
+        "portage" : {
+            "use" : "curl"
+        }
+    },{
+        "name" : "app-misc/tmux"
+    },{
+        "name" : "sys-process/htop"
+    },{
+        "name" : "dev-vcs/git",
+        "portage" : {
+            "accept_keywords" : "git"
+        }
+    },{
+        "name" : "dev-libs/jemalloc",
+        "portage" : {
+            "accept_keywords" : "jemalloc"
+        }
+    },{
+        "name" : "dev-libs/libxml2"
+    },{
+        "name" : "net-dns/bind-tools"
+    },{
+        "name" : "dev-vcs/hub",
+        "portage" : {
+            "accept_keywords" : "hub"
+        }
+    },{
+        "name" : "sys-kernel/gentoo-sources",
+        "portage" : {
+            "accept_keywords" : "gentoo-sources"
+        }
+    },{
+        "name" : "app-portage/layman"
+    },{
+        "name" : "net-misc/ntp"
+    },{
+        "name" : "app-portage/gentoolkit"
+    }]
+}
