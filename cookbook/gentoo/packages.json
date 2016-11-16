@@ -76,10 +76,10 @@
     },{
         "name" : "x11-misc/xsel"
     },{
-        "name" : "dev-db/postgresql"
+        "name" : "dev-db/postgresql",
         "portage" : {
-            "accept_keywords" : "postqresql",
-            "use" : "postgreql"
+            "accept_keywords" : "postgresql",
+            "use" : "postgresql"
         }
     }]
 }
