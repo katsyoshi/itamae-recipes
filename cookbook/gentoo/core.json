@@ -45,5 +45,10 @@
         "portage" : {
             "use" : "rsyslog"
         }
+    },{
+        "name" : "dev-perl/App-cpanminus",
+        "portage" : {
+            "accept_keywords" : "cpanm"
+        }
     }]
 }
