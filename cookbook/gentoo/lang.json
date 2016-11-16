@@ -6,7 +6,9 @@
             "use" : "rust"
         }
     },{
-        "name" : "dev-java/icedtea",
+        "name" : "dev-java/icedtea-bin"
+    },{
+        "name" : "dev-java/icedtea:8",
         "portage" : {
             "accept_keywords" : "icedtea",
             "use" : "icedtea"
