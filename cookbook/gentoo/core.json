@@ -40,5 +40,10 @@
         "name" : "net-misc/ntp"
     },{
         "name" : "app-portage/gentoolkit"
+    },{
+        "name" : "app-admin/rsyslog",
+        "portage" : {
+            "use" : "rsyslog"
+        }
     }]
 }
