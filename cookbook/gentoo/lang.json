@@ -17,5 +17,16 @@
             "accept_keywords" : "gcc",
             "use" : "gcc"
         }
+    },{
+        "name" : "dev-lang/erlang",
+        "portage" : {
+            "accept_keywords" : "erlang",
+            "use" : "erlang"
+        }
+    },{
+        "name" : "dev-lang/elixir",
+        "portage" : {
+            "accept_keywords" : "elixir"
+        }
     }]
 }
