@@ -73,5 +73,7 @@
         "portage" : {
             "use" : "gimp"
         }
+    },{
+        "name" : "x11-misc/xsel"
     }]
 }
