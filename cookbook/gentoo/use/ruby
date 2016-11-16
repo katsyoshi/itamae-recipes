@@ -1,0 +1,3 @@
+dev-lang/ruby jemalloc ncurses readline
+virtual/rubygems ruby_targets_ruby23
+dev-ruby/* ruby_targets_ruby23

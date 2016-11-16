@@ -30,5 +30,11 @@
         "portage" : {
             "accept_keywords" : "elixir"
         }
+    },{
+        "name" : "dev-lang/ruby:2.3",
+        "portage" : {
+            "accept_keywords" : "ruby",
+            "use" : "ruby"
+        }
     }]
 }
