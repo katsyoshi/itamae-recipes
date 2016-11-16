@@ -81,5 +81,7 @@
             "accept_keywords" : "postgresql",
             "use" : "postgresql"
         }
+    },{
+        "name" : "net-analyzer/rrdtool"
     }]
 }
