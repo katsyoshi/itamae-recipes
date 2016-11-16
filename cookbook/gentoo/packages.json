@@ -32,12 +32,6 @@
             "accept_keywords" : "xfce4-terminal"
         }
     },{
-        "name" : "app-misc/tmux"
-    },{
-        "name" : "sys-kernel/linux-firmware"
-    },{
-        "name" : "sys-process/htop"
-    },{
         "name" : "www-client/google-chrome",
         "portage" : {
             "accept_keywords" : "google-chrome",
@@ -46,29 +40,9 @@
     },{
         "name" : "www-client/firefox-bin"
     },{
-        "name" : "net-misc/curl",
-        "portage" : {
-            "use" : "curl"
-        }
-    },{
-        "name" : "dev-libs/openssl"
-    },{
-        "name" : "sys-kernel/gentoo-sources",
-        "portage" : {
-            "accept_keywords" : "gentoo-sources"
-        }
-    },{
-        "name" : "app-portage/layman"
-    },{
         "name" : "app-text/poppler",
         "portage" : {
             "use" : "poppler"
-        }
-    },{
-        "name" : "app-editors/emacs",
-        "portage" : {
-            "use" : "emacs",
-            "accept_keywords" : "emacs"
         }
     },{
         "name" : "x11-libs/gdk-pixbuf",
@@ -77,8 +51,6 @@
         }
     },{
         "name" : "x11-drivers/xf86-input-synaptics"
-    },{
-        "name" : "net-misc/ntp"
     },{
         "name" : "media-gfx/imagemagick",
         "portage" : {
@@ -95,19 +67,11 @@
             "use" : "libxcb"
         }
     },{
-        "name" : "app-portage/gentoolkit"
-    },{
         "name" : "x11-misc/parcellite"
     },{
         "name" : "media-gfx/gimp",
         "portage" : {
             "use" : "gimp"
-        }
-    },{
-        "name" : "app-text/texlive",
-        "portage" : {
-            "accept_keywords" : "texlive",
-            "use" : "texlive"
         }
     }]
 }
