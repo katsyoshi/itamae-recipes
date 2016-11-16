@@ -1,0 +1,21 @@
+{
+    "packages" : [{
+        "name" : "dev-lang/rust",
+        "portage" : {
+            "accept_keywords" : "rust",
+            "use" : "rust"
+        }
+    },{
+        "name" : "dev-java/icedtea",
+        "portage" : {
+            "accept_keywords" : "icedtea",
+            "use" : "icedtea"
+        }
+    },{
+        "name" : "sys-devel/gcc",
+        "portage" : {
+            "accept_keywords" : "gcc",
+            "use" : "gcc"
+        }
+    }]
+}
