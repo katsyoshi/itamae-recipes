@@ -50,5 +50,7 @@
         "portage" : {
             "accept_keywords" : "cpanm"
         }
+    },{
+        "name" : "app-admin/supervisor"
     }]
 }
