@@ -52,5 +52,7 @@
         }
     },{
         "name" : "app-admin/supervisor"
+    },{
+        "name" : "sys-apps/dstat"
     }]
 }
