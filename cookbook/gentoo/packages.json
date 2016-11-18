@@ -90,5 +90,7 @@
         "portage" : {
             "use" : "ffmpeg"
         }
+    },{
+        "name" : "media-video/gtk-recordmydesktop"
     }]
 }
