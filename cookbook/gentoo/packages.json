@@ -85,5 +85,10 @@
         "name" : "net-analyzer/rrdtool"
     },{
         "name" : "dev-db/mysql"
+    },{
+        "name" : "media-video/ffmpeg",
+        "portage" : {
+            "use" : "ffmpeg"
+        }
     }]
 }
