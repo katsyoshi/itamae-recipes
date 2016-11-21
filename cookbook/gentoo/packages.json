@@ -82,7 +82,10 @@
             "use" : "postgresql"
         }
     },{
-        "name" : "net-analyzer/rrdtool"
+        "name" : "net-analyzer/rrdtool",
+        "portage" : {
+            "mask" : "rrdtool"
+        }
     },{
         "name" : "dev-db/mysql"
     },{
