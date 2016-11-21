@@ -1,5 +1,5 @@
 dev-lang/rust ~amd64
 app-eselect/eselect-rust ~amd64
-dev-utils/cargo ~amd64
-dev-utils/cmake ~amd64
-dev-utils/llvm ~amd64
+dev-util/cargo ~amd64
+dev-util/cmake ~amd64
+dev-util/llvm ~amd64
