@@ -36,5 +36,11 @@
             "accept_keywords" : "ruby",
             "use" : "ruby"
         }
+    },{
+        "name" : "sys-devel/clang",
+        "portage" : {
+            "accept_keywords" : "clang",
+            "use" : "clang"
+        }
     }]
 }
