@@ -95,5 +95,10 @@
         }
     },{
         "name" : "media-video/gtk-recordmydesktop"
+    },{
+        "name" : "net-im/slack-bin",
+        "portage" : {
+            "accept_keywords" : "slack-bin"
+        }
     }]
 }
