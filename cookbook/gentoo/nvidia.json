@@ -1,0 +1,22 @@
+{
+    "packages" : [{
+        "name" : "x11-drivers/nvidia-drivers",
+        "portage" : {
+            "accept_keywords" : "nvidia-drivers",
+            "use" : "nvidia-drivers"
+        }
+    },{
+        "name" : "dev-util/nvidia-cuda-sdk",
+        "portage" : {
+            "accept_keywords" : "nvidia-cuda-sdk",
+            "use" : "nvidia-cuda-sdk"
+        }
+    },{
+        "name" : "dev-util/nvidia-cuda-toolkit",
+        "portage" : {
+            "accept_keywords" : "nvida-cuda-toolkit",
+            "use" : "nvidia-cuda-toolkit",
+            "license" : "nvidia-cuda-toolkit"
+        }
+    }]
+}
