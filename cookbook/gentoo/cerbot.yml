@@ -1,0 +1,4 @@
+packages:
+  - name: app-crypt/certbot
+    portage:
+      accept_keywords: certbot
