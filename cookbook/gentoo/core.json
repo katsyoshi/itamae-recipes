@@ -66,5 +66,7 @@
             "accept_keywords" : "mlterm",
             "use" : "mlterm"
         }
+    },{
+        "name" : "app-misc/jq"
     }]
 }
