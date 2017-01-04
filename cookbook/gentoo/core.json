@@ -54,5 +54,17 @@
         "name" : "app-admin/supervisor"
     },{
         "name" : "sys-apps/dstat"
+    },{
+        "name" : "media-libs/libsixel",
+        "portage" : {
+            "accept_keywords" : "libsixel",
+            "use" : "libsixel"
+        }
+    },{
+        "name" : "x11-terms/mlterm",
+        "portage" : {
+            "accept_keywords" : "mlterm",
+            "use" : "mlterm"
+        }
     }]
 }
