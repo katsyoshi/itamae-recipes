@@ -1,55 +1,42 @@
 {
-    "packages" : [{
-        "name" : "dev-libs/openssl"
-    },{
-        "name" : "net-misc/curl",
-        "portage" : {
-            "use" : ["http2", "ssl", "ipv6", "ssh"]
+    "packages" : [
+        {"name" : "dev-libs/openssl"}
+        ,{
+            "name" : "net-misc/curl"
+            , "use" : ["http2", "ssl", "ipv6", "ssh"]
         }
-    },{
-        "name" : "app-misc/tmux"
-    },{
-        "name" : "sys-process/htop"
-    },{
-        "name" : "dev-vcs/git"
-        ,"portage" : {
-            "keywords" : ["~amd64"]
+        ,{"name" : "app-misc/tmux"}
+        ,{"name" : "sys-process/htop"}
+        ,{
+            "name" : "dev-vcs/git"
+            , "version" : ">=2.12.0"
         }
-    },{
-        "name" : "dev-libs/jemalloc"
-        ,"portage" : {
-            "version" : ">=4.4.0"
-            ,"keywords" : ["~amd64"]
+        ,{
+            "name" : "dev-libs/jemalloc"
+            , "version" : ">=4.4.0"
+            , "keywords" : ["~amd64"]
         }
-    },{
-        "name" : "dev-libs/libxml2"
-    },{
-        "name" : "net-dns/bind-tools"
-    },{
-        "name" : "dev-vcs/hub"
-    },{
-        "name" : "sys-kernel/gentoo-sources"
-    },{
-        "name" : "app-portage/layman"
-    },{
-        "name" : "net-misc/ntp"
-    },{
-        "name" : "app-portage/gentoolkit"
-    },{
-        "name" : "app-admin/rsyslog"
-        ,"portage" : {
-            "use" : ["jemalloc"]
+        ,{"name" : "dev-libs/libxml2"}
+        ,{"name" : "net-dns/bind-tools"}
+        ,{"name" : "dev-vcs/hub"}
+        ,{"name" : "sys-kernel/gentoo-sources"}
+        ,{"name" : "app-portage/layman"}
+        ,{"name" : "net-misc/ntp"}
+        ,{"name" : "app-portage/gentoolkit"}
+        ,{
+            "name" : "app-admin/rsyslog"
+            ,"use" : ["jemalloc"]
         }
-    },{
-        "name" : "app-admin/supervisor"
-    },{
-        "name" : "sys-apps/dstat"
-    },{
-        "name" : "media-libs/libsixel"
-        ,"portage" : {
-            "use" : ["curl", "gd", "gtk", "jpeg", "png"]
+        ,{"name" : "app-admin/supervisor"}
+        ,{"name" : "sys-apps/dstat"}
+        ,{
+            "name" : "media-libs/libsixel"
+            , "use" : ["curl", "gd", "gtk", "jpeg", "png"]
         }
-    },{
-        "name" : "app-misc/jq"
-    }]
+        ,{"name" : "app-misc/jq"}
+        ,{
+            "name" : "dev-libs/libuv"
+            , "version" : ">=1.11.0"
+        }
+    ]
 }

@@ -2,10 +2,10 @@ require 'itamae-plugin-resource-portage'
 
 node.packages.each do |package|
   name = package.name
-  version = package.portage&.version
-  slot = package.portage&.slot
-  use = package.portage&.use || []
-  keywords = package.portage&.keywords || []
+  version = package&.version
+  slot = package&.slot
+  use = package&.use || []
+  keywords = package&.keywords || []
 
   portage name do
     version version if version

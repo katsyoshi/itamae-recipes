@@ -1,46 +1,43 @@
 {
-    "packages" : [{
-        "name" : "dev-lang/rust",
-        "portage" : {
-            "accept_keywords" : "rust",
-            "use" : "rust"
+    "packages" : [
+        {"name" : "dev-lang/rust"}
+        ,{
+            "name" : "dev-java/icedtea-bin"
+            , "version" : ">=3.3.0"
+            , "slot" : "8"
         }
-    },{
-        "name" : "dev-java/icedtea-bin"
-    },{
-        "name" : "dev-java/icedtea:8",
-        "portage" : {
-            "accept_keywords" : "icedtea",
-            "use" : "icedtea"
+        ,{
+            "name" : "dev-java/icedtea"
+            , "version" : ">=3.3.0"
+            , "slot" : "8"
         }
-    },{
-        "name" : "sys-devel/gcc",
-        "portage" : {
-            "accept_keywords" : "gcc",
-            "use" : "gcc"
+        ,{
+            "name" : "sys-devel/gcc"
+            , "version" : ">=5.4.0"
+            , "slot" : "5.4.0"
         }
-    },{
-        "name" : "dev-lang/erlang",
-        "portage" : {
-            "accept_keywords" : "erlang",
-            "use" : "erlang"
+        ,{
+            "name" : "dev-lang/erlang"
+            , "version" : ">=19.2"
         }
-    },{
-        "name" : "dev-lang/elixir",
-        "portage" : {
-            "accept_keywords" : "elixir"
+        ,{
+            "name" : "dev-lang/elixir"
+            , "version" : ">=1.4.2"
         }
-    },{
-        "name" : "dev-lang/ruby:2.3",
-        "portage" : {
-            "accept_keywords" : "ruby",
-            "use" : "ruby"
+        ,{
+            "name" : "dev-lang/ruby"
+            , "version" : ">=2.4.0"
+            , "slot": "2.4"
+            , "use" : ["jemalloc"]
         }
-    },{
-        "name" : "sys-devel/clang",
-        "portage" : {
-            "accept_keywords" : "clang",
-            "use" : "clang"
+        ,{
+            "name" : "sys-devel/clang"
+            , "version" : ">=3.9.1-r100"
+            , "slot" : "0"
         }
-    }]
+        ,{
+            "name" : "net-libs/nodejs"
+            , "version": ">=7.6.0"
+        }
+    ]
 }
