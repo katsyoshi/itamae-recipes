@@ -1,0 +1,25 @@
+---
+packages:
+  - name: x11-drivers/nvidia-drivers
+    version: ">=378.13"
+    use:
+      - X
+      - compat
+      - driver
+      - kms
+      - static-libs
+      - tools
+      - uvm
+  - name: dev-util/nvidia-cuda-sdk
+    version: ">=8.0.61"
+    use:
+      - cuda
+      - doc
+      - examples
+      - mpi
+      - opencl
+  - name: dev-util/nvidia-cuda-toolkit
+    version: ">=8.0.61"
+    use:
+      - doc
+

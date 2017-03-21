@@ -1,0 +1,19 @@
+---
+packages:
+  - name: app-editors/emacs
+    version: ">=25.2"
+    use:
+      - gtk
+      - png
+      - jpeg
+      - gif
+      - dbus
+      - svg
+      - ssl
+      - gtk3
+      - zlib
+      - tiff
+      - sound
+      - xft
+  - name: app-editors/vim
+    version: ">=8.0.0386"

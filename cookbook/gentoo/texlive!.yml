@@ -1,0 +1,40 @@
+---
+packages:
+  - name: app-text/texlive-core
+    use:
+      - xetex
+  - name: media-libs/harfbuzz
+    use:
+      - icu
+  - name: media-libs/gd
+    use:
+      - truetype
+      - png
+      - jpeg
+      - fontconfig
+  - name: app-text/texlive
+    use:
+      - context
+      - detex
+      - doc
+      - dvi2tty
+      - dvipdfm
+      - epspdf
+      - extra
+      - graphics
+      - humanities
+      - luatex
+      - metapost
+      - music
+      - omega
+      - pdfannotextractor
+      - png
+      - pstricks
+      - publishers
+      - science
+      - tex4ht
+      - texi2html
+      - truetype
+      - xetex
+      - xindy
+      - xml

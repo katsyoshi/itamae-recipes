@@ -1,9 +1,0 @@
-{
-    "packages" : [{
-        "name" : "app-text/texlive",
-        "portage" : {
-            "accept_keywords" : "texlive",
-            "use" : "texlive"
-        }
-    }]
-}

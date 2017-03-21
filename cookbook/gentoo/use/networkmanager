@@ -1,3 +1,0 @@
-net-wireless/wpa_supplicant dbus
-sys-auth/consolekit policykit
-dev-libs/glib dbus

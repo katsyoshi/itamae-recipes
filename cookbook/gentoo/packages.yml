@@ -1,0 +1,86 @@
+---
+packages:
+  - name: x11-misc/slim
+  - name: x11-apps/xdm
+  - name: net-wireless/wpa_supplicant
+    use:
+      - dbus
+  - name: sys-auth/consolekit
+    use:
+      - policykit
+  - name: dev-libs/glib
+    use:
+      - dbus
+  - name: net-misc/networkmanager
+  - name: app-crypt/gcr
+    use:
+      - gtk
+  - name: app-crypt/pinentry
+    use:
+      - gnome-keyring
+  - name: gnome-extra/nm-applet
+    use:
+      - nm-applet
+  - name: app-i18n/mozc
+    use:
+      - fcitx
+  - name: media-fonts/noto
+  - name: media-fonts/ricty
+  - name: x11-terms/xfce4-terminal
+  - name: www-client/google-chrome
+  - name: www-client/firefox-bin
+  - name: app-text/poppler
+    use:
+      - cairo
+      - tiff
+  - name: x11-libs/gdk-pixbuf
+    use:
+      - jpeg
+      - tiff
+  - name: x11-drivers/xf86-input-synaptics
+  - name: media-gfx/imagemagick
+    use:
+      - perl
+  - name: x11-misc/shutter
+  - name: x11-libs/libxcb
+    use:
+      - xkb
+  - name: x11-misc/parcellite
+  - name: media-gfx/gimp
+    use:
+      - aalib
+      - alsa
+      - aqua
+      - bzip2
+      - curl
+      - dbus
+      - exif
+      - jpeg
+      - jpeg2k
+      - lcms
+      - mng
+      - openexr
+      - pdf
+      - postscript
+      - smp
+      - svg
+      - tiff
+      - wm
+      - xpm
+  - name: x11-misc/xsel
+  - name: dev-db/postgresql
+  - name: dev-db/mysql
+  - name: media-video/ffmpeg
+    use:
+      - openh264
+      - aac
+      - alsa
+      - faac
+      - v4l
+      - libv4l
+      - webp
+      - nvenc
+      - jpeg2k
+      - x265
+  - name: media-video/gtk-recordmydesktop
+  - name: net-im/slack-bin

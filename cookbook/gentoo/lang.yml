@@ -1,0 +1,26 @@
+---
+packages:
+  - name: dev-lang/rust
+  - name: dev-java/icedtea-bin
+    version: ">=3.3.0"
+    slot: '8'
+  - name: dev-java/icedtea
+    version: ">=3.3.0"
+    slot: '8'
+  - name: sys-devel/gcc
+    version: ">=5.4.0"
+    slot: 5.4.0
+  - name: dev-lang/erlang
+    version: ">=19.2"
+  - name: dev-lang/elixir
+    version: ">=1.4.2"
+  - name: dev-lang/ruby
+    version: ">=2.4.0"
+    slot: '2.4'
+    use:
+      - jemalloc
+  - name: sys-devel/clang
+    version: ">=3.9.1-r100"
+    slot: '0'
+  - name: net-libs/nodejs
+    version: ">=7.6.0"
