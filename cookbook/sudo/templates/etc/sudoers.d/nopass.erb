@@ -1,0 +1,4 @@
+<% @allows.each do |np| %>
+  <% no_pass = np.no_pass ? "NOPASSWD:" : "(ALL:ALL)" %>
+<%= np.user %> ALL=<%= no_pass %> ALL
+<% end %>
