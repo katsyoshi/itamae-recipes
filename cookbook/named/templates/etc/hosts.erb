@@ -1,0 +1,4 @@
+127.0.0.1 localhost.localdomain localhost
+<% @names.each do |host| %>
+<%= host.ip %> <%= "#{host.name}.#{@domain}" %> <%= host.name %>
+<% end %>
