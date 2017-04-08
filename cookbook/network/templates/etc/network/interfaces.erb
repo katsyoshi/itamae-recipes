@@ -6,4 +6,5 @@ iface <%= n.device %> inet static
   address <%= n.ip_address %>
   netmask <%= n.netmask %>
   gateway <%= n.gateway %>
+  <%= n.dns ? ["dns-nameservers", *n.dns].join(" ") : nil %>
 <% end %>
