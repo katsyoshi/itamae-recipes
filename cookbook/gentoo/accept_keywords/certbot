@@ -1,7 +1,0 @@
-dev-python/pyrfc3339 ~amd64
-dev-python/pythondialog ~amd64
-dev-python/parsedatetime ~amd64
-dev-python/zope-component ~amd64
-app-crypt/certbot ~amd64
-app-crypt/acme ~amd64
-dev-python/zope-event ~amd64

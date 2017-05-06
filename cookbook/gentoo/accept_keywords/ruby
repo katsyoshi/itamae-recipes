@@ -1,4 +1,0 @@
-dev-lang/ruby ~amd64
-dev-ruby/* ~amd64
-virtual/rubygems ~amd64
-app-eselect/eselect-ruby ~amd64
