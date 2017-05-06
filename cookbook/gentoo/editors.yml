@@ -17,3 +17,4 @@ packages:
       - xft
   - name: app-editors/vim
     version: ">=8.0.0386"
+  - name: app-vim/llvm-vim
