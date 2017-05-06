@@ -27,6 +27,7 @@ packages:
   - name: media-fonts/noto
   - name: media-fonts/ricty
   - name: x11-terms/xfce4-terminal
+    version: ">=0.8.4"
   - name: www-client/google-chrome
   - name: www-client/firefox-bin
   - name: app-text/poppler
@@ -68,7 +69,10 @@ packages:
       - wm
       - xpm
   - name: x11-misc/xsel
+  - name: app-eselect/eselect-postgresql
   - name: dev-db/postgresql
+    slot: "9.6"
+    version: ">=9.6.2"
   - name: dev-db/mysql
   - name: media-video/ffmpeg
     use:
