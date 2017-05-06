@@ -24,3 +24,5 @@ packages:
     slot: '0'
   - name: net-libs/nodejs
     version: ">=7.6.0"
+  - name: dev-lang/perl
+    slot: "0/5.24"
