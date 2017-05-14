@@ -2,5 +2,7 @@ packages:
   - name: dev-go/go-text
   - name: dev-go/go-crypto
   - name: dev-go/go-net
+  - name: dev-python/namespace-zope
+    version: ">=1"
   - name: app-emulation/lxd
     version: ">=2.11"
