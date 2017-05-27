@@ -87,4 +87,12 @@ packages:
       - jpeg2k
       - x265
   - name: media-video/gtk-recordmydesktop
+  - name: dev-utils/gtk-doc
   - name: net-im/slack-bin
+  - name: media-libs/libsixel
+    use:
+      - curl
+      - gd
+      - gtk
+      - jpeg
+      - png
