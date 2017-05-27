@@ -1,6 +1,5 @@
 ---
 packages:
-  - name: dev-lang/rust
   - name: dev-java/icedtea-bin
     version: ">=3.3.0"
     slot: '8'
