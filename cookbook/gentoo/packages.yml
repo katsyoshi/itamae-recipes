@@ -67,7 +67,6 @@ packages:
       - wm
       - xpm
   - name: x11-misc/xsel
-  - name: app-eselect/eselect-postgresql
   - name: dev-db/postgresql
     slot: "9.6"
     version: ">=9.6.2"
