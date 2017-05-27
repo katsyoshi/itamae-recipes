@@ -20,8 +20,6 @@ packages:
     use: ["jemalloc"]
   - name: "app-admin/supervisor"
   - name: "sys-apps/dstat"
-  - name: "media-libs/libsixel"
-    use: ["curl", "gd", "gtk", "jpeg", "png"]
   - name: "app-misc/jq"
   - name: "dev-libs/libuv"
     version: ">=1.11.0"
