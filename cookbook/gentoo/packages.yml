@@ -30,6 +30,7 @@ packages:
     version: ">=0.8.4"
   - name: www-client/google-chrome
   - name: www-client/firefox-bin
+    version: ">=53.0-r2"
   - name: app-text/poppler
     use:
       - cairo
