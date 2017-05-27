@@ -8,9 +8,6 @@ packages:
   - name: sys-auth/consolekit
     use:
       - policykit
-  - name: dev-libs/glib
-    use:
-      - dbus
   - name: net-misc/networkmanager
   - name: app-crypt/gcr
     use:

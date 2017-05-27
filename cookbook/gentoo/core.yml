@@ -23,4 +23,6 @@ packages:
   - name: "app-misc/jq"
   - name: "dev-libs/libuv"
     version: ">=1.11.0"
-
+  - name: "sys-app/dbus"
+  - name: "dev-libs/glib"
+    use: ["dbus"]
