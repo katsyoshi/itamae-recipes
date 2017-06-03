@@ -96,3 +96,6 @@ packages:
     use:
       - python
   - name: dev-util/gtk-doc
+  - name: app-text/ghostscript-gpl
+    use:
+      - cups
