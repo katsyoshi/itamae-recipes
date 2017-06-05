@@ -26,6 +26,9 @@ packages:
   - name: x11-terms/xfce4-terminal
     version: ">=0.8.4"
   - name: www-client/google-chrome
+  - name: media-plugins/alsa-plugins
+    use:
+      - pulseaudio
   - name: www-client/firefox-bin
     version: ">=53.0-r2"
   - name: app-text/poppler
