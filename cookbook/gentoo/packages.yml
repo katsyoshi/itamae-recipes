@@ -102,3 +102,5 @@ packages:
   - name: app-text/ghostscript-gpl
     use:
       - cups
+  - name: net-im/gitter-bin
+    version: ">=3.1.0"
