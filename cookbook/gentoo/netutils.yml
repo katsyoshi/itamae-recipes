@@ -1,0 +1,6 @@
+packages:
+  - name: gnome-extra/nm-applet
+  - name: net-misc/whois
+  - name: net-dns/bind-tools
+  - name: net-dns/dnsmasq
+  - name: net-analyzer/traceroute
