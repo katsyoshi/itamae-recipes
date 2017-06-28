@@ -1,0 +1,8 @@
+(set-face-attribute 'default nil :family "<%= @family %>" :height <%= @height %>)
+<% if @os =~ /mac/i %>
+(setq ns-command-modifier (quote meta))
+(setq ns-alternate-modifier (quote super))
+<% end %>
+(global-set-key (kbd "M-C-<up>") 'text-scale-increase)
+(global-set-key (kbd "M-C-<down>") 'text-scale-decrease)
+(global-set-key (kbd "M-C-a") 'text-scale-adjust)
