@@ -1,0 +1,15 @@
+emacs:
+  font:
+    family: Ricty
+    height: 140
+
+  packages:
+    - font
+    - complete
+    - git
+    - skk
+    - ruby
+    - yaml
+    - markdown
+    - lua
+    - html
