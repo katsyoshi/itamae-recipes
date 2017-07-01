@@ -6,40 +6,12 @@
 
 ;; インストールするパッケージ
 (defvar my/favorite-packages
-'(
-;;;; system
-exec-path-from-shell
-
-;;;; for auto-complete
-auto-complete fuzzy popup pos-tip yasnippet auto-yasnippet
-
-;;;; buffer utils
-popwin elscreen yascroll buffer-move
-
-;;;; flycheck
-flycheck
-
-;;;; helm
-helm
-
-;;;; git
-magit gitattributes-mode gh magit-gh-pulls
-
-;;;; rails
-haml-mode slim-mode sass-mode coffee-mode feature-mode web-mode
-
-;;;; skk
-ddskk
-
-;;;; text
-yaml-mode markdown-mode textile-mode
-
-;;;; lang
-lua-mode rust-mode
-
-;; Dockerfile
-dockerfile-mode
-))
+  '(exec-path-from-shell
+    flycheck
+    helm
+    ddskk
+    magit<% @packages.each{|pkg| %>
+    <%= pkg %><% } %>))
 
 ;; my/favorite-packagesからインストールしていないパッケージをインストール
 (dolist (package my/favorite-packages)
