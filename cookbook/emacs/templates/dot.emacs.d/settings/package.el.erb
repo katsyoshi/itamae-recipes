@@ -10,8 +10,8 @@
     flycheck
     helm
     ddskk
-    magit<% @packages.each{|pkg| %>
-    <%= pkg %><% } %>))
+    magit<% @packages.each do |pkg| %>
+    <%= pkg %><% end %>))
 
 ;; my/favorite-packagesからインストールしていないパッケージをインストール
 (dolist (package my/favorite-packages)
