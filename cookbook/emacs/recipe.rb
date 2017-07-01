@@ -2,6 +2,7 @@ emacs = node.emacs
 home = emacs.config_dir || File.expand_path("~/.") + "/.emacs.d"
 font = emacs.font
 packages = emacs.packages
+settings = emacs.settings
 
 git "#{home}" do
   action :sync
@@ -18,10 +19,11 @@ end
 template "#{home}/settings/package.el" do
   action :create
   source "templates/dot.emacs.d/settings/package.el.erb"
+  variables(packages: packages)
 end
 
 template "#{home}/init.el" do
   action :create
   source "templates/dot.emacs.d/settings/init.el.erb"
-  variables(home: home, packages: packages)
+  variables(home: home, packages: settings)
 end
