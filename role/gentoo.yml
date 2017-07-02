@@ -11,9 +11,9 @@ emacs:
     - yaml-mode
   settings:
     - complete
+    - dockerfile
     - font
     - git
-    - html
     - markdown
     - lua
     - ruby
