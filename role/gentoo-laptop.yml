@@ -2,14 +2,20 @@ emacs:
   font:
     family: Ricty
     height: 120
-
   packages:
-    - font
+    - auto-complete
+    - dockerfile-mode
+    - haml-mode
+    - lua-mode
+    - sass-mode
+    - yaml-mode
+  settings:
     - complete
+    - dockerfile
+    - font
     - git
-    - skk
-    - ruby
-    - yaml
     - markdown
     - lua
-    - html
+    - ruby
+    - skk
+    - yaml
