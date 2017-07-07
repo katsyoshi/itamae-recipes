@@ -24,6 +24,6 @@ end
 
 template "#{home}/init.el" do
   action :create
-  source "templates/dot.emacs.d/settings/init.el.erb"
+  source "templates/dot.emacs.d/init.el.erb"
   variables(home: home, packages: settings)
 end
