@@ -1,5 +1,5 @@
 (set-face-attribute 'default nil :family "<%= @family %>" :height <%= @height %>)
-<% if @os =~ /mac/i %>
+<% if @os =~ /Darwin/i %>
 (setq ns-command-modifier (quote meta))
 (setq ns-alternate-modifier (quote super))
 <% end %>
