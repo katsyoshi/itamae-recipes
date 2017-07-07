@@ -25,11 +25,6 @@
 ;; いんすとーるぱっけーじもーで
 (load "<%= "#{@home}/settings/package.el" %>")
 
-;; Load PATH
-(let ((default-directory (expand-file-name "~/.emacs.d/site-lisp")))
-  (add-to-list 'load-path default-directory)
-  (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
-      (normal-top-level-add-subdirs-to-load-path)))
 ;; パス設定
 (exec-path-from-shell-initialize)
 
@@ -63,7 +58,7 @@
 (setq x-select-enable-clipboard t)
 
 ;; バッファリスト
-(load "~/.emacs.d/settings/helm.el")
+(load "<%= "#{@home}/settings/helm.el" %>")
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
 (define-key helm-map (kbd "TAB") 'helm-execute-persistent-action)
 ;; emacs daemons
@@ -83,13 +78,9 @@
       (set-frame-parameter (selected-frame) 'alpha '(90 90))
       ;; tool-bar表示オフ
       (tool-bar-mode 0)
-      ;; Cacoo
-      ;;(load "~/.emacs.d/settings/cacoo.el")
       ;; 画像表示
       (auto-image-file-mode t)
       (auto-compression-mode t)))
-;; window分割
-;;(load "~/.emacs.d/settings/window.el")))
 ;; flycheck
 (require 'flycheck)
 
