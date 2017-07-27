@@ -1,0 +1,15 @@
+emacs:
+  config_dir: /Users/katsu/.emacs.d
+  font:
+    family: Ricty
+    height: 150
+  packages:
+    - auto-complete
+    - yaml-mode
+  settings:
+    - font
+    - git
+    - markdown
+    - ruby
+    - skk
+    - yaml
