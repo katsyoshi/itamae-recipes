@@ -30,3 +30,9 @@ emacs.settings&.tap do |settings|
     variables(home: home, packages: settings)
   end
 end
+
+emacs.user&.tap do |user|
+  execute "change owner of #{user}" do
+    command "chown -R #{user.name}:#{user.group} #{home}"
+  end
+end
