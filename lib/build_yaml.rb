@@ -8,11 +8,10 @@ class BuildYAML
       Pathname.new(File.expand_path('..', __dir__))
     end
 
-    def read_yaml
+    def read_yaml(files)
       build_yaml = new
-      data = build_yaml.load_files(ARGV)
-      yaml = build_yaml.aggregate(data)
-      puts YAML.dump(yaml)
+      data = build_yaml.load_files(files)
+      build_yaml.aggregate(data)
     end
   end
 

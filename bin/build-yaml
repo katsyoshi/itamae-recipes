@@ -1,5 +1,7 @@
-#/usr/bin/env ruby
+#!/usr/bin/env ruby
 $:.unshift File.expand_path("../lib", __dir__)
 require "build_yaml"
 
-puts BuildYAML.read_yaml
+File.open("build.yaml", "w") do |f|
+  f.write(YAML.dump(BuildYAML.read_yaml(ARGV)))
+end
