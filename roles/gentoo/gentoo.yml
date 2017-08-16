@@ -1,4 +1,7 @@
 packages: []
+user:
+  name: null
+  groups: null
 emacs:
   font:
     family: Ricty
