@@ -1,6 +1,9 @@
 packages:
   - name: gnome-extra/nm-applet
-  - name: net-misc/whois
+  - name: net-analyzer/traceroute
   - name: net-dns/bind-tools
   - name: net-dns/dnsmasq
-  - name: net-analyzer/traceroute
+  - name: net-misc/whois
+  - name: net-wireless/wpa_supplicant
+    use:
+      - dbus
