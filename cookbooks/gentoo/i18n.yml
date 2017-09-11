@@ -1,0 +1,9 @@
+---
+packages:
+  - name: app-i18n/fcitx
+    use:
+      - gtk2
+      - gtk3
+  - name: app-i18n/mozc
+    use:
+      - fcitx
