@@ -1,0 +1,28 @@
+---
+packages:
+  - name: media-gfx/gimp
+    use:
+      - aalib
+      - alsa
+      - aqua
+      - bzip2
+      - curl
+      - dbus
+      - exif
+      - jpeg
+      - jpeg2k
+      - lcms
+      - mng
+      - openexr
+      - pdf
+      - postscript
+      - smp
+      - svg
+      - tiff
+      - wm
+      - xpm
+  - name: media-gfx/inkscape
+  - name: media-video/gtk-recordmydesktop
+  - name: x11-misc/parcellite
+  - name: x11-misc/shutter
+  - name: x11-terms/xfce4-terminal
