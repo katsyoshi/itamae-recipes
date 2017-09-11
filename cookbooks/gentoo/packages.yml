@@ -2,35 +2,24 @@
 packages:
   - name: x11-misc/slim
   - name: x11-apps/xdm
-  - name: net-wireless/wpa_supplicant
-    use:
-      - dbus
   - name: sys-auth/consolekit
     use:
       - policykit
-  - name: net-misc/networkmanager
   - name: app-crypt/gcr
     use:
       - gtk
   - name: app-crypt/pinentry
     use:
       - gnome-keyring
-  - name: gnome-extra/nm-applet
-    use:
-      - nm-applet
-  - name: app-i18n/mozc
-    use:
-      - fcitx
-  - name: media-fonts/noto
-  - name: media-fonts/ricty
-  - name: x11-terms/xfce4-terminal
-    version: ">=0.8.4"
-  - name: www-client/google-chrome
   - name: media-plugins/alsa-plugins
     use:
       - pulseaudio
-  - name: www-client/firefox-bin
-    version: ">=53.0-r2"
+  - name: media-libs/raptor
+    keywords:
+      - ~amd64
+  - name: x11-libs/cairo
+    keywords:
+      - ~amd64
   - name: app-text/poppler
     use:
       - cairo
@@ -43,37 +32,10 @@ packages:
   - name: media-gfx/imagemagick
     use:
       - perl
-  - name: x11-misc/shutter
   - name: x11-libs/libxcb
     use:
       - xkb
-  - name: x11-misc/parcellite
-  - name: media-gfx/gimp
-    use:
-      - aalib
-      - alsa
-      - aqua
-      - bzip2
-      - curl
-      - dbus
-      - exif
-      - jpeg
-      - jpeg2k
-      - lcms
-      - mng
-      - openexr
-      - pdf
-      - postscript
-      - smp
-      - svg
-      - tiff
-      - wm
-      - xpm
   - name: x11-misc/xsel
-  - name: dev-db/postgresql
-    slot: "9.6"
-    version: ">=9.6.2"
-  - name: dev-db/mysql
   - name: media-video/ffmpeg
     use:
       - openh264
@@ -86,8 +48,6 @@ packages:
       - nvenc
       - jpeg2k
       - x265
-  - name: media-video/gtk-recordmydesktop
-  - name: net-im/slack-bin
   - name: media-libs/libsixel
     use:
       - curl
@@ -102,5 +62,3 @@ packages:
   - name: app-text/ghostscript-gpl
     use:
       - cups
-  - name: net-im/gitter-bin
-    version: ">=3.1.0"
