@@ -26,3 +26,4 @@ packages:
   - name: x11-misc/parcellite
   - name: x11-misc/shutter
   - name: x11-terms/xfce4-terminal
+    version: ">=0.8.4"

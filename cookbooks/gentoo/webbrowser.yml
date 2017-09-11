@@ -1,0 +1,8 @@
+---
+packages:
+  - name: net-im/gitter-bin
+    version: ">=3.1.0"
+  - name: net-im/slack-bin
+  - name: www-client/firefox-bin
+    version: ">=53.0-r2"
+  - name: www-client/google-chrome
