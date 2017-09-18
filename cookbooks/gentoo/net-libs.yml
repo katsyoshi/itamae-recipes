@@ -1,0 +1,4 @@
+packages:
+  - name: net-libs/nghttp2
+    keywords:
+      - ~amd64
