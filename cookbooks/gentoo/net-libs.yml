@@ -1,4 +1,7 @@
 packages:
+  - name: net-misc/wget
+    keywords:
+      - ~amd64
   - name: net-libs/nghttp2
     keywords:
       - ~amd64
