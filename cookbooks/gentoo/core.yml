@@ -1,40 +1,39 @@
 packages:
+  - name: app-admin/rsyslog
+    use:
+      - jemalloc
+  - name: app-admin/supervisor
+  - name: app-misc/jq
+  - name: app-misc/tmux
+  - name: app-portage/gentoolkit
+  - name: app-portage/layman
+  - name: dev-libs/glib
+    use:
+      - dbus
+  - name: dev-libs/jemalloc
+    version: >=4.4.0
+    keywords:
+      - ~amd64
+  - name: dev-libs/libuv
+    version: >=1.11.0
+  - name: dev-libs/libxml2
   - name: dev-libs/openssl
+  - name: dev-vcs/git
+    version: >=2.12.0
+  - name: dev-vcs/hub
   - name: net-misc/curl
     use:
       - http2
       - ssl
       - ipv6
       - ssh
-  - name: sys-libs/binutils-libs
-    keywords:
-      - ~amd64
-  - name: app-misc/tmux
-  - name: sys-process/htop
-  - name: dev-vcs/git
-    version: >=2.12.0
-  - name: dev-libs/jemalloc
-    version: >=4.4.0
-    keywords:
-      - ~amd64
-  - name: dev-libs/libxml2
-  - name: net-dns/bind-tools
-  - name: dev-vcs/hub
+  - name: net-misc/ntp
+  - name: sys-apps/dbus
+  - name: sys-apps/dstat
   - name: sys-kernel/gentoo-sources
     keywords:
       - ~amd64
-  - name: app-portage/layman
-  - name: net-misc/ntp
-  - name: app-portage/gentoolkit
-  - name: app-admin/rsyslog
-    use:
-      - jemalloc
-  - name: app-admin/supervisor
-  - name: sys-apps/dstat
-  - name: app-misc/jq
-  - name: dev-libs/libuv
-    version: >=1.11.0
-  - name: sys-apps/dbus
-  - name: dev-libs/glib
-    use:
-      - dbus
+  - name: sys-libs/binutils-libs
+    keywords:
+      - ~amd64
+  - name: sys-process/htop

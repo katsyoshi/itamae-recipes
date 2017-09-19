@@ -1,41 +1,38 @@
 ---
 packages:
-  - name: x11-misc/slim
-  - name: x11-apps/xdm
-  - name: sys-auth/consolekit
-    use:
-      - policykit
   - name: app-crypt/gcr
     use:
       - gtk
   - name: app-crypt/pinentry
     use:
       - gnome-keyring
-  - name: media-plugins/alsa-plugins
+  - name: app-text/ghostscript-gpl
     use:
-      - pulseaudio
-  - name: media-libs/raptor
-    keywords:
-      - ~amd64
-  - name: x11-libs/cairo
-    keywords:
-      - ~amd64
+      - cups
   - name: app-text/poppler
     use:
       - cairo
       - tiff
-  - name: x11-libs/gdk-pixbuf
+  - name: dev-libs/libxml2
     use:
-      - jpeg
-      - tiff
-  - name: x11-drivers/xf86-input-synaptics
+      - python
+  - name: dev-util/gtk-doc
   - name: media-gfx/imagemagick
     use:
       - perl
-  - name: x11-libs/libxcb
+  - name: media-libs/libsixel
     use:
-      - xkb
-  - name: x11-misc/xsel
+      - curl
+      - gd
+      - gtk
+      - jpeg
+      - png
+  - name: media-libs/raptor
+    keywords:
+      - ~amd64
+  - name: media-plugins/alsa-plugins
+    use:
+      - pulseaudio
   - name: media-video/ffmpeg
     use:
       - openh264
@@ -48,17 +45,20 @@ packages:
       - nvenc
       - jpeg2k
       - x265
-  - name: media-libs/libsixel
+  - name: sys-auth/consolekit
     use:
-      - curl
-      - gd
-      - gtk
+      - policykit
+  - name: x11-apps/xdm
+  - name: x11-drivers/xf86-input-synaptics
+  - name: x11-misc/slim
+  - name: x11-misc/xsel
+  - name: x11-libs/cairo
+    keywords:
+      - ~amd64
+  - name: x11-libs/gdk-pixbuf
+    use:
       - jpeg
-      - png
-  - name: dev-libs/libxml2
+      - tiff
+  - name: x11-libs/libxcb
     use:
-      - python
-  - name: dev-util/gtk-doc
-  - name: app-text/ghostscript-gpl
-    use:
-      - cups
+      - xkb
