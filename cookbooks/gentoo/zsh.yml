@@ -1,0 +1,8 @@
+---
+packages:
+  - name: app-shells/gentoo-zsh-completions
+  - name: app-shells/rust-zshcomp
+    keywords:
+      - ~amd64
+  - name: app-shells/zsh
+  - name: app-shells/zsh-completions
