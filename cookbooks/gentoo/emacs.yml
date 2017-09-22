@@ -1,0 +1,4 @@
+---
+packages:
+  - name: app-emacs/ruby-mode
+    version: '>=2.4.1'
