@@ -11,15 +11,13 @@ packages:
     use:
       - dbus
   - name: dev-libs/jemalloc
-    version: >=4.4.0
-    keywords:
-      - ~amd64
+    version: ">=4.4.0"
   - name: dev-libs/libuv
-    version: >=1.11.0
+    version: ">=1.11.0"
   - name: dev-libs/libxml2
   - name: dev-libs/openssl
   - name: dev-vcs/git
-    version: >=2.12.0
+    version: ">=2.12.0"
   - name: dev-vcs/hub
   - name: net-misc/curl
     use:
@@ -31,9 +29,5 @@ packages:
   - name: sys-apps/dbus
   - name: sys-apps/dstat
   - name: sys-kernel/gentoo-sources
-    keywords:
-      - ~amd64
   - name: sys-libs/binutils-libs
-    keywords:
-      - ~amd64
   - name: sys-process/htop
