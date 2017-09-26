@@ -28,6 +28,7 @@ packages:
   - name: net-misc/ntp
   - name: sys-apps/dbus
   - name: sys-apps/dstat
+  - name: sys-apps/the_silver_searcher
   - name: sys-kernel/gentoo-sources
   - name: sys-libs/binutils-libs
   - name: sys-process/htop
