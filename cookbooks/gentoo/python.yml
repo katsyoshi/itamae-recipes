@@ -1,0 +1,4 @@
+---
+packages:
+  - name: dev-python/namespace-zope
+    version: ">=1"
