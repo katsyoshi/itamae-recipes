@@ -1,5 +1,3 @@
 packages:
-  - name: dev-python/namespace-zope
-    version: ">=1"
   - name: app-emulation/lxd
     version: ">=2.11"
