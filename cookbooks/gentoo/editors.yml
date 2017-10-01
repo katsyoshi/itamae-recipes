@@ -15,6 +15,7 @@ packages:
       - tiff
       - sound
       - xft
+      - xwidgets
   - name: app-editors/vim
     version: ">=8.0.0386"
   - name: app-vim/llvm-vim
