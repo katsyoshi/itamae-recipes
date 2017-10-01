@@ -1,4 +1,6 @@
 ---
 packages:
+  - name: dev-python/cython
   - name: dev-python/namespace-zope
     version: ">=1"
+  - name: dev-python/setuptools
