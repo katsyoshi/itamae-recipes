@@ -13,6 +13,9 @@ packages:
     use:
       - cairo
       - tiff
+  - name: dev-libs/boost
+    use:
+      - python
   - name: dev-libs/libxml2
     use:
       - python
