@@ -1,6 +1,12 @@
 emacs = node.emacs
 home = emacs.config_dir || File.expand_path("~/.") + "/.emacs.d"
 
+execute "reset emacs config" do
+  command "git checkout -f && git fetch && git rebase origin/master --force"
+  cwd home
+  only_if "test -d #{home}"
+end
+
 git "#{home}" do
   action :sync
   repository "https://github.com/katsyoshi/dot.emacs.d"
