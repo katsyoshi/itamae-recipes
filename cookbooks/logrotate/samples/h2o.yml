@@ -1,0 +1,11 @@
+logrotate:
+  apps:
+    - name: h2o
+      configs:
+        - period: weekly
+          sharedscripts: true
+          logdir:
+            - /var/log/h2o/access.log
+            - /var/log/h2o/error.log
+          postrotate: /bin/systemctl reload h2o.service > /dev/null 2>/dev/null || true
+

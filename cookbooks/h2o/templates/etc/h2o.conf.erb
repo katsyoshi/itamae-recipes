@@ -1,0 +1,26 @@
+user: <%= h2o.user || "www-data" %>
+proxy.preserve-x-forwarded-proto: ON
+http2-max-concurrent-requests-per-connection: <%= h2o.max_concurrent_requests || 50 %>
+hosts:
+  <% h2o.servers.each do |server| %>
+  <%= server.name %>
+    listen:
+      port: <%= server.port || 80 %>
+      <% if server.ssl %>
+      ssl:
+        minimum-version: <%= server.ssl.minimum_version || "TSLv1.2" %>
+        cipher-suite: <%= server.ssl.ciphers %>
+        certificate-file: <%= server.ssl.certfile %>
+        key-file: <%= server.ssl.keyfile %>
+    paths:
+      <%= server.path || "/" %>:
+        <%= server.dir %>
+error-doc:
+  <% h2o.error_docs&.each |error| %>
+  - status: error.status
+    url: error.url
+  <% end %>
+access-log: <%= "#{h2o.logdir}/#{h2o.access_log}" %>
+error-log: <%= "#{h2o.logdir}/#{h2o.error_log"} %>
+pid-file: <%= h2o.pid %>
+http2-reprioritize-blocking-assets: ON
