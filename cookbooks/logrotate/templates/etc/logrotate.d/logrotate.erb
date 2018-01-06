@@ -1,0 +1,20 @@
+<% configs.each do |config| %>
+<%= config.logdir.join("\n") %> {
+    missingok
+    notifempty
+    <%= config.period if config.period %>
+    delaycompress
+    copytruncate
+    <%= "size #{config.size}" if config.size %>
+    <%= "rotate #{config.rotate}" if config.rotate %>
+    <%= "sharedscripts" if sharedscripts %>
+    <% if config.prerotate %>
+    prerotate
+        <%= config.prerotate %>
+    endscript<% end %>
+    <% if config.postrotate %>
+    postrotate
+        <%= config.postrotate %>
+    endscript<% end %>
+}
+<% end %>
