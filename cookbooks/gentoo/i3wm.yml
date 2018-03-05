@@ -1,5 +1,12 @@
 ---
 packages:
+  - name: media-libs/imlib2
+    use:
+      - jpeg
+      - png
+  - name: media-gfx/feh
+    use:
+      - curl
   - name: x11-misc/dmenu
   - name: x11-misc/i3status
   - name: x11-wm/i3
