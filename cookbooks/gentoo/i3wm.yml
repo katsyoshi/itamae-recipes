@@ -9,4 +9,7 @@ packages:
       - curl
   - name: x11-misc/dmenu
   - name: x11-misc/i3status
+  - name: x11-terms/lilyterm
+    keywords:
+      - ~amd64
   - name: x11-wm/i3
