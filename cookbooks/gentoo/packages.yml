@@ -1,42 +1,8 @@
 ---
 packages:
-  - name: app-crypt/gcr
-    use:
-      - gtk
-  - name: app-crypt/pinentry
-    use:
-      - gnome-keyring
-  - name: app-text/ghostscript-gpl
-    use:
-      - cups
-  - name: app-text/poppler
-    use:
-      - cairo
-      - tiff
-  - name: dev-libs/boost
-    use:
-      - python
-  - name: dev-libs/libxml2
-    use:
-      - python
-  - name: dev-util/gtk-doc
-  - name: media-gfx/imagemagick
-    use:
-      - perl
-  - name: media-libs/libsixel
-    use:
-      - curl
-      - gd
-      - gtk
-      - jpeg
-      - png
-  - name: media-libs/raptor
+  - name: media-video/ffmpeg
     keywords:
       - ~amd64
-  - name: media-plugins/alsa-plugins
-    use:
-      - pulseaudio
-  - name: media-video/ffmpeg
     use:
       - openh264
       - aac
@@ -48,20 +14,6 @@ packages:
       - nvenc
       - jpeg2k
       - x265
-  - name: sys-auth/consolekit
-    use:
-      - policykit
-  - name: x11-apps/xdm
-  - name: x11-drivers/xf86-input-synaptics
-  - name: x11-misc/slim
-  - name: x11-misc/xsel
-  - name: x11-libs/cairo
-    keywords:
-      - ~amd64
-  - name: x11-libs/gdk-pixbuf
-    use:
-      - jpeg
-      - tiff
-  - name: x11-libs/libxcb
-    use:
-      - xkb
+
+
+
