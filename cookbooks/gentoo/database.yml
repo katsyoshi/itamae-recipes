@@ -1,8 +1,7 @@
 ---
 packages:
-  - name: dev-db/mysql
   - name: dev-db/postgresql
-    slot: "9.6"
-    version: ">=9.6.2"
+    keywords:
+      - ~amd64
     use:
       - uuid
