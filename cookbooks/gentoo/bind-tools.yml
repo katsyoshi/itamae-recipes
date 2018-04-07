@@ -1,0 +1,5 @@
+packages:
+  - name: net-dns/bind-tools
+    use:
+      - readline
+      - ssl
