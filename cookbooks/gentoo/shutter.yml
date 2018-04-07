@@ -1,0 +1,9 @@
+--
+packages:
+  - name: gnome-base/gvfs
+    use:
+      - udisks
+  - name: virtual/imagemagick-tools
+    use:
+      - perl
+  - name: x11-misc/shutter
