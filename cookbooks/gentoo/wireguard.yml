@@ -1,0 +1,5 @@
+---
+packages:
+  - name: net-vpn/wireguard
+    keywords:
+      - ~amd64
