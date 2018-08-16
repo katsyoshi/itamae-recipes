@@ -1,0 +1,10 @@
+---
+packages:
+  - name: media-gfx/blender
+    use:
+      - jpeg2k
+      - llvm
+      - opencl
+      - openexr
+      - openmp
+      - tiff
