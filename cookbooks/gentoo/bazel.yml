@@ -1,0 +1,5 @@
+---
+packages:
+  - name : dev-util/bazel
+    keywords:
+      - ~amd64
