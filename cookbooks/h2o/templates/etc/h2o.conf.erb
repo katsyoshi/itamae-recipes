@@ -20,7 +20,9 @@ error-doc:
   - status: error.status
     url: error.url
   <% end %>
-access-log: <%= "#{h2o.logdir}/#{h2o.access_log}" %>
-error-log: <%= "#{h2o.logdir}/#{h2o.error_log"} %>
+access-log:
+  path: <%= "#{h2o.logdir}/#{h2o.access_log}" %>
+  format: "<%= h2o.log_format %>"
+error-log: <%= "#{h2o.logdir}/#{h2o.error_log}" %>
 pid-file: <%= h2o.pid %>
 http2-reprioritize-blocking-assets: ON
