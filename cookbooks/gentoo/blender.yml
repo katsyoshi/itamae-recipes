@@ -1,10 +1,10 @@
 ---
 packages:
   - name: media-gfx/blender
+    keywords:
+      - ~amd64
     use:
-      - jpeg2k
-      - llvm
-      - opencl
-      - openexr
-      - openmp
+      - cycles
+      - cuda
+      - openimageio
       - tiff
