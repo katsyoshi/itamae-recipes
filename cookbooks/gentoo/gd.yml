@@ -1,0 +1,9 @@
+---
+packages:
+  - name: media-libs/gd
+    use:
+      - jpeg
+      - fontconfig
+      - truetype
+      - png
+

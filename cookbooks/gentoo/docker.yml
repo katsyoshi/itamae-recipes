@@ -1,0 +1,12 @@
+---
+packages:
+  - name: app-emulation/containerd
+    keywords: ~amd64
+  - name: app-emulation/docker-proxy
+    keywords: ~amd64
+  - name: app-emulation/runc
+    keywords: ~amd64
+  - name: app-emulation/docker
+    keywords: ~amd64
+    use:
+      - btrfs

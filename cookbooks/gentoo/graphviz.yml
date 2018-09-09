@@ -1,0 +1,14 @@
+---
+packages:
+  - name: media-gfx/graphviz
+    use:
+      - gdk-pixbuf
+      - gtk
+      - gts
+      - guile
+      - lasi
+      - nsl
+      - pdf
+      - postscript
+      - svg
+

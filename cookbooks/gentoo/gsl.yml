@@ -1,0 +1,5 @@
+---
+packages:
+  - name: sci-libs/gsl
+    keywords:
+      - ~amd64

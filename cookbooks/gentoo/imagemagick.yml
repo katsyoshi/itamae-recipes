@@ -1,0 +1,12 @@
+---
+packages:
+  - name: media-gfx/imagemagick
+    use:
+      - jpeg
+      - perl
+      - png
+      - postscript
+      - raw
+      - svg
+      - tiff
+      - webp
