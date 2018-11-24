@@ -3,7 +3,7 @@ GEM
   specs:
     ansi (1.5.0)
     hashie (3.6.0)
-    itamae (1.9.11)
+    itamae (1.10.1)
       ansi
       hashie
       schash (~> 0.1.0)
@@ -14,16 +14,16 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (5.0.2)
-    net-telnet (0.2.0)
+    net-telnet (0.1.1)
     rake (12.3.1)
     schash (0.1.2)
     sfl (2.3)
-    specinfra (2.75.1)
+    specinfra (2.76.3)
       net-scp
       net-ssh (>= 2.7)
-      net-telnet
+      net-telnet (= 0.1.1)
       sfl
-    thor (0.20.0)
+    thor (0.20.3)
 
 PLATFORMS
   ruby
@@ -34,4 +34,4 @@ DEPENDENCIES
   rake
 
 BUNDLED WITH
-   1.16.1
+   1.17.1
