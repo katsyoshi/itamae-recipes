@@ -1,12 +1,15 @@
 ---
 packages:
-  - name: media-libs/imlib2
+  - name: media-libs/libpng
     use:
-      - jpeg
-      - png
-  - name: media-gfx/feh
+      - 'apng'
+      - '-static-libs'
+  - name: dev-libs/libnl
     use:
-      - curl
+      - 'debug'
+      - 'threads'
+      - 'utils'
+      - '-static-libs'
   - name: x11-misc/dmenu
   - name: x11-misc/i3lock
   - name: x11-misc/i3status
