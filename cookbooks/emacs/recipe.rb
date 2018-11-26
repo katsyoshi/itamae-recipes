@@ -25,7 +25,15 @@ emacs.packages&.tap do |packages|
   template "#{home}/settings/package.el" do
     action :create
     source "templates/dot.emacs.d/settings/package.el.erb"
-    variables(packages: packages)
+    variables(packages: packages, lsp: emacs&.lsp)
+  end
+end
+
+emacs.lsp&.each do |lang|
+  template "#{home}/settings/lsp/#{lang.name}.el" do
+    action :create
+    source "templates/dot.emacs.d/settings/lsp/#{lang.name}.el.erb"
+    variables(language: lang)
   end
 end
 
@@ -33,7 +41,7 @@ emacs.settings&.tap do |settings|
   template "#{home}/init.el" do
     action :create
     source "templates/dot.emacs.d/init.el.erb"
-    variables(home: home, packages: settings)
+    variables(home: home, packages: settings, lsp: emacs&.lsp)
   end
 end
 

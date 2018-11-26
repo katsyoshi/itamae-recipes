@@ -96,3 +96,5 @@
             backup-directory-alist))
 <% @packages.each do |pkg| %>
 (load "<%= "#{@home}/settings/#{pkg}.el" %>")<% end %>
+<% @lsp&.each do |lsp| %>
+(load "<%= "#{@home}/settings/lsp/#{lsp.name}.el"%>")<% end %>
