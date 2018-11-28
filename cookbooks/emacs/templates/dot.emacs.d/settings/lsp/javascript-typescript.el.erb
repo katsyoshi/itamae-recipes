@@ -1,4 +1,8 @@
 (require 'lsp-javascript-typescript)
+(require 'js)
+(setq js-indent-level 2)
+(setq indent-tabs-mode nil)
+
 (add-hook 'js-mode-hook #'lsp-javascript-typescript-enable)
 (add-hook 'typescript-mode-hook #'lsp-javascript-typescript-enable) ;; for typescript support
 (add-hook 'js3-mode-hook #'lsp-javascript-typescript-enable) ;; for js3-mode support
