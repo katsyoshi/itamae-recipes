@@ -6,10 +6,10 @@
 
 ;; インストールするパッケージ
 (defvar my/favorite-packages
-  '(exec-path-from-shell
+  '(ddskk
+    exec-path-from-shell
     flycheck
     helm
-    ddskk
     magit<% @packages.each do |pkg| %>
     <%= pkg %><% end %>
     <% @lsp&.each do |lsp| %>
