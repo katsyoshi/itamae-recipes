@@ -19,7 +19,7 @@
     lsp-ui
     ;; install lsp-mode plugin packages
     campany-lsp<% @lsp&.each do |lsp| %>
-    <%= lsp.name =~ /^company$/ ? "#{lsp.name}-lsp": "lsp-#{lsp.name}" %><% end %>
+    <%= "lsp-#{lsp.name}" %><% end %>
 ))
 
 ;; my/favorite-packagesからインストールしていないパッケージをインストール
