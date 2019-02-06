@@ -12,6 +12,9 @@
 set $mod Mod4
 set $terminal <%= @i3wm&.terminal || "lilyterm" %>
 set $browser <%= @i3wm&.browser || "firefox-bin" %>
+<% @i3wm.laptop&.each do |laptop| %>
+set <%= laptop.type %> <%= laptop.display_name %>
+<% end %>
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
