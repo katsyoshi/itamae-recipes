@@ -6,21 +6,35 @@
 
 ;; インストールするパッケージ
 (defvar my/favorite-packages
-  '(campany
-    ddskk
-    exec-path-from-shell
+  ;; default install packages
+  '(exec-path-from-shell
+    counsel
     flycheck
-    helm
-    magit<% @packages.each do |pkg| %>
-    <%= pkg %><% end %>
+    magit
+    neotree
 
-    ;; install lsp-mode
+    ;; all-the-icons
+    all-the-icons
+    all-the-icons-ivy
+
+    ;; lsp-mode
     lsp-mode
     lsp-ui
-    ;; install lsp-mode plugin packages
-    campany-lsp<% @lsp&.each do |lsp| %>
-    <%= "lsp-#{lsp.name}" %><% end %>
-))
+
+    ;; auto completion packages
+    company
+    company-box
+    company-lsp
+
+    ;; language packages
+    dockerfile-mode
+    js2-mode
+    markdown-mode
+    rust-mode
+    yaml-mode
+
+    ;; additional packages<% @packages.each do |pkg| %>
+    <%= pkg %><% end %>))
 
 ;; my/favorite-packagesからインストールしていないパッケージをインストール
 (dolist (package my/favorite-packages)
